@@ -1,25 +1,54 @@
-// This is a non Complaint solution
+
+/******************************************************************************
+ *  Compilation:  javac R05_OBJ01_J.java
+ *  Execution:    java R05_OBJ01_J
+ *  Print integer till its max value
+ ******************************************************************************/
 
 
 
-public class Widget {
-  public int total; // Number of elements
+
+/**
+ *
+ * @author sonut
+ */
+
+public class R05_OBJ01_J {
+      
+  private static int total = 1111111; // Number of elements
  
-  void add() {
+  static void add() {
     if (total < Integer.MAX_VALUE) {     
       total++;
       // ...
     } else {
       throw new ArithmeticException("Overflow");
     }
+    
+    System.out.println(total);
   }
  
-  void remove() { 
+  static void remove() { 
     if (total > 0) {     
       total--;
       // ...
     } else {
       throw new ArithmeticException("Overflow");
     }
+    
+    System.out.println(total);
+  }  
+  
+  public static int getTotal () {
+    return total;
   }
-}
+    public static void main(String[] args) {
+        
+     
+      add();
+      remove();
+      
+      
+      
+    }
+  }
