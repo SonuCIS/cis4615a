@@ -1,12 +1,24 @@
-// This is a non complaint solution
+import java.security.SecureRandom;
 
-import java.util.Random;
-// ...
- 
-Random number = new Random(123L);
-//...
-for (int i = 0; i < 20; i++) {
-  // Generate another random integer in the range [0, 20]
-  int n = number.nextInt(21);
-  System.out.println(n);
-}
+/******************************************************************************
+ *  Compilation:  javac R49_MSC02_J.java
+ *  Execution:    java R49_MSC02_J
+ *  Random Integers
+ ******************************************************************************/
+
+/**
+ *
+ * @author sonut
+ */
+
+  public class R49_MSC02_J {
+
+public static void main (String args[]) {
+  SecureRandom number = new SecureRandom();
+  // Generate 20 integers 0..20
+  for (int i = 0; i < 20; i++) {
+    System.out.println(number.nextInt(21));
+  }
+}  
+
+  }
